@@ -2,189 +2,304 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AgroLoop | Inteligência Digital para Propriedades Rurais</title>
+<title>AgroLoop | Inteligência Digital Rural</title>
 
 <style>
 
-body {
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7f2;
-    color: #333;
 }
 
-header {
-    background: #1f4d2e;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+
+body{
+    background:#f4f6f1;
+    color:#333;
 }
 
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+
+/* MENU */
+
+nav{
+
+position:absolute;
+top:0;
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+z-index:10;
+
 }
 
-header p {
-    font-size: 22px;
+
+.logo{
+
+font-size:32px;
+font-weight:bold;
+
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:16px;
+
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+
+/* CAPA */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(
+rgba(0,50,20,0.65),
+rgba(0,30,10,0.75)
+),
+
+url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+padding-left:8%;
+
+color:white;
+
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+
+
+.hero-content{
+
+max-width:700px;
+
 }
 
-.card h2 {
-    color: #1f4d2e;
+
+
+.hero h1{
+
+font-size:65px;
+margin-bottom:20px;
+
 }
 
-.botao {
-    display:inline-block;
-    background:#1f4d2e;
-    color:white;
-    padding:15px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:15px;
+
+.hero h2{
+
+font-size:32px;
+font-weight:normal;
+margin-bottom:20px;
+
 }
 
-.botao:hover {
-    background:#2e703f;
+
+.hero p{
+
+font-size:22px;
+line-height:1.5;
+
 }
 
-footer {
-    background:#1f4d2e;
-    color:white;
-    text-align:center;
-    padding:20px;
+
+
+.botao{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:15px 35px;
+
+background:#3c8d3f;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-size:18px;
+
 }
+
+
+
+.botao:hover{
+
+background:#28662c;
+
+}
+
+
+
+
+/* SEÇÕES */
+
+
+section{
+
+padding:70px 10%;
+
+}
+
+
+.titulo{
+
+text-align:center;
+font-size:38px;
+color:#205b2d;
+margin-bottom:40px;
+
+}
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px #0002;
+
+}
+
+
+.card h3{
+
+color:#205b2d;
+margin-bottom:15px;
+
+}
+
+
+
+/* PROPRIEDADE */
+
+
+.propriedade{
+
+background:#205b2d;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+.propriedade h2{
+
+font-size:40px;
+
+}
+
+
+
+footer{
+
+background:#143b1d;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+
 
 </style>
+
 
 </head>
 
 
 <body>
 
-<header>
-
-<h1>AgroLoop</h1>
-
-<p>
-Inteligência digital para propriedades rurais
-</p>
-
-<p>
-Transformando dados do campo em informações estratégicas para tomada de decisão.
-</p>
-
-</header>
 
 
-<div class="container">
+<nav>
 
-
-<div class="card">
-
-<h2>Sobre a AgroLoop</h2>
-
-<p>
-A AgroLoop integra geotecnologias, levantamento aéreo,
-dados agronômicos e inteligência territorial para gerar
-diagnósticos digitais de propriedades rurais.
-</p>
-
+<div class="logo">
+AgroLoop
 </div>
 
 
+<div>
 
-<h2>Serviços</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-<h2>🛰️ Geotecnologias</h2>
-
-<p>
-Mapeamentos aéreos, ortomosaicos,
-modelos digitais e análise espacial.
-</p>
+<a href="#">Início</a>
+<a href="#">Tecnologia</a>
+<a href="#">Propriedades</a>
+<a href="#">Contato</a>
 
 </div>
 
+</nav>
 
 
-<div class="card">
-<h2>🌱 Diagnóstico Agronômico</h2>
+
+
+<div class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+AgroLoop
+</h1>
+
+
+<h2>
+Conectando dados, corretores e proprietários
+</h2>
+
 
 <p>
-Avaliação produtiva, ambiental e territorial
-de propriedades rurais.
+Transformando informações do campo em valor
+para propriedades rurais.
 </p>
 
-</div>
-
-
-
-<div class="card">
-<h2>🏡 Propriedades Digitais</h2>
-
-<p>
-Apresentação interativa de fazendas,
-com mapas, relatórios e modelos 3D.
-</p>
-
-</div>
-
-
-
-<div class="card">
-<h2>📊 Inteligência Rural</h2>
-
-<p>
-Dados transformados em informações
-para decisões estratégicas.
-</p>
-
-</div>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h2>Primeira propriedade digital</h2>
-
-<h3>Fazenda São Benedito</h3>
-
-<p>
-Bragança Paulista - SP
-</p>
 
 <a class="botao" href="#">
-Em breve acessar propriedade
+Solicitar diagnóstico
 </a>
 
 
@@ -195,13 +310,129 @@ Em breve acessar propriedade
 
 
 
-<footer>
+
+
+<section>
+
+
+<h2 class="titulo">
+Como funciona
+</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🛰️ Levantamento aéreo
+</h3>
 
 <p>
-AgroLoop - Tecnologia conectando dados, campo e decisões.
+Coleta de dados através de drones e sensores,
+gerando informações precisas da propriedade.
 </p>
 
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🗺️ Geotecnologias
+</h3>
+
+<p>
+Mapas, ortomosaicos, modelos digitais
+e análise territorial.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+📊 Diagnóstico técnico
+</h3>
+
+<p>
+Informações agrícolas, ambientais
+e estratégicas para tomada de decisão.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🏡 Propriedade Digital
+</h3>
+
+<p>
+Uma nova forma de apresentar,
+avaliar e valorizar imóveis rurais.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="propriedade">
+
+
+<h2>
+Primeira Propriedade Digital
+</h2>
+
+
+<br>
+
+
+<h1>
+Fazenda São Benedito
+</h1>
+
+
+<p>
+Bragança Paulista - SP
+</p>
+
+
+<a class="botao" href="#">
+
+Conhecer propriedade
+
+</a>
+
+
+</section>
+
+
+
+
+<footer>
+
+AgroLoop - Tecnologia conectando dados, campo e decisões.
+
 </footer>
+
 
 
 </body>
