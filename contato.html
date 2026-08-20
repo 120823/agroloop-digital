@@ -4,140 +4,157 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contato - AgroLoop</title>
+<title>Contato | AgroLoop</title>
 
 <style>
 
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7f2;
-    color:#222;
-}
-
-header{
-    background:#143b1d;
-    color:white;
-    padding:25px;
-    text-align:center;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7f2;
+color:#333;
 }
 
 .container{
-    max-width:1100px;
-    margin:50px auto;
-    padding:0 25px;
+max-width:1200px;
+margin:0 auto;
+padding:50px 30px;
 }
 
 .titulo{
-    color:#216b2f;
-    font-size:42px;
-    text-align:center;
-    margin-bottom:15px;
+text-align:center;
+color:#176b2f;
+font-size:42px;
+margin-bottom:10px;
 }
 
 .subtitulo{
-    text-align:center;
-    font-size:19px;
-    color:#555;
-    margin-bottom:40px;
+text-align:center;
+font-size:20px;
+color:#555;
+margin-bottom:50px;
 }
 
-.contatos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.10);
-    text-align:center;
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+text-align:center;
 }
 
 .card h2{
-    color:#216b2f;
-    margin-top:0;
+color:#176b2f;
+margin-top:0;
+font-size:28px;
 }
 
 .card p{
-    font-size:17px;
-    line-height:1.6;
+font-size:18px;
+line-height:1.6;
+}
+
+.destaque{
+font-size:20px;
+font-weight:bold;
+margin:25px 0;
 }
 
 .botao{
-    display:inline-block;
-    background:#3c963f;
-    color:white;
-    padding:13px 25px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:15px;
-    font-weight:bold;
+display:inline-block;
+background:#399447;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-size:17px;
+font-weight:bold;
+margin-top:15px;
+transition:0.2s;
 }
 
 .botao:hover{
-    background:#2f7d32;
+background:#2d7d3b;
 }
 
-.solicitacao{
-    background:white;
-    padding:35px;
-    margin-top:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.10);
-    text-align:center;
+.responsavel{
+margin-top:30px;
 }
 
-.solicitacao h2{
-    color:#216b2f;
+.responsavel h2{
+margin-bottom:20px;
 }
 
-.solicitacao p{
-    font-size:18px;
-    line-height:1.6;
+.nome{
+font-size:24px;
+font-weight:bold;
+color:#176b2f;
+margin-bottom:8px;
+}
+
+.crea{
+font-size:18px;
+font-weight:bold;
+margin-top:8px;
+}
+
+.diagnostico{
+margin-top:30px;
+grid-column:1 / -1;
+}
+
+.diagnostico h2{
+font-size:28px;
 }
 
 footer{
-    background:#143b1d;
-    color:white;
-    padding:20px;
-    text-align:center;
-    margin-top:50px;
+text-align:center;
+padding:30px;
+color:#666;
+font-size:15px;
+}
+
+@media(max-width:800px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.diagnostico{
+grid-column:auto;
+}
+
+.titulo{
+font-size:34px;
+}
+
 }
 
 </style>
 
 </head>
 
-
 <body>
-
-
-<header>
-
-<h2>AgroLoop</h2>
-
-</header>
-
 
 <div class="container">
 
-
-<h1 class="titulo">
-📞 Entre em Contato
-</h1>
-
+<h1 class="titulo">📞 Entre em Contato</h1>
 
 <p class="subtitulo">
 Tecnologia conectando dados, campo e decisões.
 </p>
 
 
-<div class="contatos">
+<div class="cards">
 
 
 <!-- WHATSAPP -->
@@ -147,13 +164,13 @@ Tecnologia conectando dados, campo e decisões.
 <h2>📱 WhatsApp</h2>
 
 <p>
-Entre em contato diretamente pelo WhatsApp para solicitar informações,
-tirar dúvidas ou solicitar um diagnóstico.
+Entre em contato diretamente pelo WhatsApp para solicitar
+informações, tirar dúvidas ou solicitar um diagnóstico.
 </p>
 
-<p>
-<strong>(16) 99782-3495</strong>
-</p>
+<div class="destaque">
+(16) 99782-3495
+</div>
 
 <a
 class="botao"
@@ -174,13 +191,13 @@ Falar pelo WhatsApp
 <h2>📧 E-mail</h2>
 
 <p>
-Entre em contato por e-mail para informações, propostas comerciais
-e solicitações de serviços.
+Entre em contato por e-mail para informações, propostas
+comerciais e solicitações de serviços.
 </p>
 
-<p>
-<strong>alexjsr2009@hotmail.com</strong>
-</p>
+<div class="destaque">
+alexjsr2009@hotmail.com
+</div>
 
 <a
 class="botao"
@@ -193,12 +210,36 @@ Enviar E-mail
 </div>
 
 
+<!-- RESPONSÁVEL TÉCNICO -->
+
+<div class="card responsavel">
+
+<h2>👨‍🌾 Responsável Técnico</h2>
+
+<div class="nome">
+Alex José Santa Rosa
+</div>
+
+<p>
+Engenheiro Agrônomo
+</p>
+
+<div class="crea">
+CREA-SP: 5071757091
+</div>
+
+<p>
+Responsável técnico pelos serviços e análises de natureza
+agronômica realizados pelo AgroLoop, observadas as atribuições
+profissionais e exigências aplicáveis.
+</p>
+
 </div>
 
 
 <!-- SOLICITAR DIAGNÓSTICO -->
 
-<div class="solicitacao">
+<div class="card diagnostico">
 
 <h2>🌱 Solicitar Diagnóstico</h2>
 
@@ -210,7 +251,7 @@ ambientais, agronômicas, econômicas e cartográficas.
 
 <a
 class="botao"
-href="https://wa.me/5516997823495?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20de%20uma%20propriedade."
+href="https://wa.me/5516997823495?text=Olá%2C%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20uma%20propriedade%20rural."
 target="_blank">
 
 Solicitar Diagnóstico pelo WhatsApp
@@ -222,13 +263,12 @@ Solicitar Diagnóstico pelo WhatsApp
 
 </div>
 
+</div>
+
 
 <footer>
-
 AgroLoop - Tecnologia conectando dados, campo e decisões.
-
 </footer>
-
 
 </body>
 
