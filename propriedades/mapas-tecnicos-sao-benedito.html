@@ -1,165 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mapas Técnicos - Fazenda São Benedito</title>
-
 <style>
-
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7f2;
-    color:#222;
-}
-
-.container{
-    max-width:1200px;
-    margin:40px auto;
-    padding:0 20px;
-}
-
-.titulo{
-    color:#216b2f;
-    font-size:42px;
-    margin-bottom:35px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    margin-bottom:30px;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.10);
-}
-
-.card h2{
-    color:#216b2f;
-    font-size:28px;
-    margin-top:0;
-}
-
-.card p{
-    font-size:17px;
-    line-height:1.6;
-}
-
-.mapa{
-    width:100%;
-    margin-top:25px;
-    border-radius:10px;
-}
-
-.voltar{
-    display:inline-block;
-    background:#3c963f;
-    color:white;
-    padding:12px 25px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:10px;
-}
-
-footer{
-    background:#143b1d;
-    color:white;
-    padding:20px;
-    text-align:center;
-    margin-top:50px;
-}
-
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7f2;color:#222}
+.container{max-width:1200px;margin:40px auto;padding:0 20px}
+.titulo{color:#216b2f;font-size:42px;margin-bottom:35px}
+.card{background:white;padding:30px;margin-bottom:30px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.10)}
+.card h2{color:#216b2f;font-size:28px;margin-top:0}
+.card p{font-size:17px;line-height:1.6}
+.mapa{display:block;width:100%;height:auto;margin:25px auto 0;border-radius:10px}
+.voltar{display:inline-block;background:#3c963f;color:white;padding:12px 25px;border-radius:8px;text-decoration:none;margin-top:10px}
+footer{background:#143b1d;color:white;padding:20px;text-align:center;margin-top:50px}
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
-
 <h1 class="titulo">🗺️ Mapas Técnicos</h1>
 
-<!-- 1. ORTOMOSAICO -->
-
 <div class="card">
-
 <h2>🛰️ 1. Ortomosaico Completo da Área</h2>
-
-<p>
-Ortomosaico obtido a partir do levantamento aéreo da propriedade,
-permitindo a visualização detalhada da ocupação e das características
-espaciais da área levantada.
-</p>
-
-<!-- COLOCAR A IMAGEM DO ORTOMOSAICO AQUI -->
-
+<p>Ortomosaico obtido a partir do levantamento aéreo da propriedade, permitindo a visualização detalhada da ocupação e das características espaciais da área levantada.</p>
+<img class="mapa" src="ortomosaico-sao-benedito.png" alt="Ortomosaico completo da Fazenda São Benedito">
 </div>
 
-
-<!-- 2. ÁREA CULTIVADA -->
-
 <div class="card">
-
 <h2>🌱 2. Área Cultivada</h2>
-
-<p>
-Mapa da área destinada à exploração agrícola, permitindo visualizar
-a distribuição das áreas cultivadas dentro dos limites da propriedade.
-</p>
-
-<!-- COLOCAR O MAPA DA ÁREA CULTIVADA AQUI -->
-
+<p>Mapa da área destinada à exploração agrícola, permitindo visualizar a distribuição das áreas cultivadas dentro dos limites da propriedade.</p>
+<img class="mapa" src="area-cultivada-sao-benedito.png" alt="Mapa da área cultivada da Fazenda São Benedito">
 </div>
 
-
-<!-- 3. MAPA AMBIENTAL -->
-
 <div class="card">
-
 <h2>🌳 3. Mapa Ambiental</h2>
-
-<p>
-Mapa destinado à representação das áreas de vegetação nativa,
-Áreas de Preservação Permanente (APP), Reserva Legal e demais
-elementos ambientais identificados no levantamento.
-</p>
-
-<!-- COLOCAR O MAPA AMBIENTAL AQUI -->
-
+<p>Mapa destinado à representação das áreas de vegetação nativa, Áreas de Preservação Permanente (APP), Reserva Legal e demais elementos ambientais identificados no levantamento.</p>
+<img class="mapa" src="mapa-ambiental-sao-benedito.png" alt="Mapa ambiental da Fazenda São Benedito">
 </div>
-
-
-<!-- 4. ESTRADAS INTERNAS -->
 
 <div class="card">
-
 <h2>🛣️ 4. Estradas Internas</h2>
-
-<p>
-Mapa das principais estradas e acessos internos da Fazenda São Benedito,
-auxiliando na avaliação da logística e da circulação dentro da propriedade.
-</p>
-
-<!-- COLOCAR O MAPA DAS ESTRADAS INTERNAS AQUI -->
-
+<p>Mapa das principais estradas e acessos internos da Fazenda São Benedito, auxiliando na avaliação da logística e da circulação dentro da propriedade.</p>
+<img class="mapa" src="estradas-internas-sao-benedito.png" alt="Mapa das estradas internas da Fazenda São Benedito">
 </div>
 
-
-<a class="voltar" href="diagnostico-sao-benedito.html">
-← Voltar ao Diagnóstico
-</a>
-
+<a class="voltar" href="diagnostico-sao-benedito.html">← Voltar ao Diagnóstico</a>
 </div>
-
-
-<footer>
-
-AgroLoop - Tecnologia conectando dados, campo e decisões.
-
-</footer>
-
+<footer>AgroLoop - Tecnologia conectando dados, campo e decisões.</footer>
 </body>
-
 </html>
