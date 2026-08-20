@@ -47,9 +47,28 @@ line-height:1.8;
 text-align:justify;
 }
 
-.card ul{
-font-size:18px;
-line-height:1.8;
+.destaques{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.destaque{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px #0002;
+}
+
+.destaque h2{
+color:#205b2d;
+font-size:23px;
+}
+
+.destaque p{
+font-size:17px;
+line-height:1.6;
 }
 
 .voltar{
@@ -84,77 +103,71 @@ text-align:center;
 </h1>
 
 
-
 <div class="card">
 
-<h2>🌎 Inserção Hidrográfica Regional</h2>
+<h2>Resumo do Capítulo</h2>
 
 <p>
-O território de Bragança Paulista está inserido na Unidade de Gerenciamento de Recursos Hídricos dos rios Piracicaba, Capivari e Jundiaí (UGRHI-5 / Bacias PCJ), que abrange 76 municípios entre São Paulo e Minas Gerais, com área de drenagem total de aproximadamente 14.178 km² (Comitês PCJ, 2024).
+A Fazenda São Benedito está inserida no município de Bragança Paulista,
+integrante da UGRHI-5 – Bacias PCJ, e encontra-se predominantemente na
+sub-bacia do rio Jaguari, importante formador do rio Piracicaba.
 </p>
 
 <p>
-Dentro dessa unidade, o município encontra-se predominantemente na sub-bacia do rio Jaguari, um dos formadores do rio Piracicaba, com cabeceiras localizadas na Serra da Mantiqueira, no limite com Minas Gerais (Comitês PCJ, 2024; Borges et al., 2019).
+A região apresenta uma rede de drenagem composta por cursos d'água como
+Jaguari, Jacareí, Lavapés e Toró, além de contribuições para a sub-bacia
+do rio Atibaia. Essa configuração proporciona uma boa disponibilidade
+hídrica superficial, embora sujeita à sazonalidade do regime de chuvas.
+</p>
+
+<p>
+Do ponto de vista agrícola e ambiental, a proximidade de cursos d'água
+exige atenção às Áreas de Preservação Permanente (APPs), que podem limitar
+o aproveitamento de determinadas áreas para lavoura ou pastagem.
 </p>
 
 </div>
 
 
+<div class="destaques">
 
-<div class="card">
 
-<h2>🌊 Hidrografia Local</h2>
+<div class="destaque">
 
-<p>
-Em nível local, a drenagem urbana e rural do município é tributária de três ribeirões principais — Lavapés (antigo Canivete) e Toró — afluentes do rio Jaguari, além do rio Jacareí, que nasce no bairro de Sete Pontes, na divisa com Piracaia (Guia de Bragança, s.d.).
-</p>
+<h2>💧 Disponibilidade Hídrica</h2>
 
 <p>
-Partes do território municipal também contribuem para a sub-bacia do rio Atibaia, igualmente integrante das Bacias PCJ, o que é registrado em levantamentos fotográficos e cartográficos da região rural do município (Pulsar Imagens, 2020).
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>📈 Regime Hidrológico do Rio Jaguari</h2>
-
-<p>
-Um estudo específico sobre o regime hidrológico do rio Jaguari no trecho de Bragança Paulista foi conduzido por Borges et al. (2019), com base em série histórica de vazões da estação fluviométrica de Guaripocaba (código DAEE 3D-015).
-</p>
-
-<p>
-A análise permite caracterizar o comportamento fluviométrico natural do rio, informação relevante para dimensionamento de outorgas de uso da água, irrigação e identificação de áreas sujeitas a cheias sazonais.
+Boa disponibilidade de águas superficiais, associada à rede de cursos
+d'água da região.
 </p>
 
 </div>
 
 
+<div class="destaque">
 
-<div class="card">
+<h2>🌧️ Sazonalidade</h2>
 
-<h2>🚜 Implicações Práticas para o Produtor Rural</h2>
-
-<ul>
-
-<li>
-A disponibilidade hídrica superficial é relativamente boa, dada a densidade de cursos d'água de cabeceira, mas a vazão apresenta forte sazonalidade associada ao regime de chuvas.
-</li>
-
-<li>
-Propriedades próximas às várzeas do Jaguari, Jacareí, Lavapés e Toró devem considerar a Área de Preservação Permanente (APP) ao longo dos cursos d'água, conforme a Lei nº 12.651/2012 — Código Florestal.
-</li>
-
-<li>
-A existência de APP ao longo dos cursos d'água reduz a área efetivamente aproveitável para lavoura ou pastagem.
-</li>
-
-</ul>
+<p>
+A vazão dos cursos d'água apresenta variação associada ao regime de chuvas.
+</p>
 
 </div>
 
+
+<div class="destaque">
+
+<h2>🌳 Restrição Ambiental</h2>
+
+<p>
+Áreas próximas aos cursos d'água estão sujeitas às regras de APP previstas
+no Código Florestal.
+</p>
+
+</div>
+
+
+</div>
 
 
 <a class="voltar" href="diagnostico-sao-benedito.html">
@@ -165,7 +178,6 @@ A existência de APP ao longo dos cursos d'água reduz a área efetivamente apro
 
 
 </div>
-
 
 
 <footer>
